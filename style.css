@@ -1,0 +1,105 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h3 {
+    font-weight: 500;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+}
+
+.side-bar {
+    background: url(img/bg.webp) no-repeat center/cover;
+    flex: 0 0 500px;
+    display: grid;
+    align-items: center;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.699);
+    height: 130px;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.icon {
+    height: 100%;
+}
+
+.main {
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    background-color: rgb(247, 247, 247);
+}
+
+.main > h3,
+.main > button,
+.main > p {
+    margin: 0 30px;
+}
+
+.form-section {
+    background-color: white;
+    padding: 15px 30px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.267);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-section label {
+    color: rgb(51, 51, 51);
+    font-weight: 500;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+input {
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px 20px;
+}
+
+@media (max-width: 850px) {
+    .container {
+        flex-direction: column;
+    }    
+}
+
+button {
+    background-color: #596D48;
+    color: white;
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 5em;
+    border: none;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.267);
+}
+
+button:hover {
+    background-color: #76915d;
+    cursor: pointer;
+}
