@@ -12,8 +12,8 @@
     <div class="container">
         <div class="side-bar">
             <div class="overlay">
-                <img class="icon" src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png" alt="">
-                <h1>Odin</h1>
+                <img class="icon" src="img/clipboard-line.svg" alt="">
+                <h1>Sign-up Form</h1>
             </div>
         </div>
         <div class="main">
@@ -21,34 +21,34 @@
             <h3>You <em>know</em> you want to.</h3>
             <div class="form-section">
                 <h3>Let's do this!</h3>
-                <form action="" method="post">
+                <form action="" method="post" id="form">
                     <div class="field">
                         <label for="firstName">First Name</label>
-                        <input type="text" name="firstName" id="firstName" placeholder="John">
+                        <input required type="text" name="firstName" id="firstName" placeholder="John">
                     </div>
                     <div class="field">
                         <label for="lastName">Last Name</label>
-                        <input type="text" name="lastName" id="lastName" placeholder="Smith">
+                        <input required type="text" name="lastName" id="lastName" placeholder="Smith">
                     </div>
                     <div class="field">
-                        <label for="firstName">First Name</label>
-                        <input type="text" name="firstName" id="firstName" placeholder="John">
+                        <label for="email">Email</label>
+                        <input required type="email" name="email" id="email" placeholder="jsmith@domain.com">
                     </div>
                     <div class="field">
-                        <label for="lastName">Last Name</label>
-                        <input type="text" name="lastName" id="lastName" placeholder="Smith">
+                        <label for="phone">Phone number</label>
+                        <input required type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Enter a valid phone number." placeholder="123-456-7890">
                     </div>
                     <div class="field">
-                        <label for="firstName">First Name</label>
-                        <input type="text" name="firstName" id="firstName" placeholder="John">
+                        <label for="password">Password</label>
+                        <input required type="password" name="password" id="password">
                     </div>
                     <div class="field">
-                        <label for="lastName">Last Name</label>
-                        <input type="text" name="lastName" id="lastName" placeholder="Smith">
+                        <label for="password">Confirm password</label>
+                        <input required type="password" name="password" id="password">
                     </div>
                 </form>
             </div>
-            <button>Create Account</button>
+            <button type="submit" form="form" value="Submit">Create Account</button>
             <p>Already have an account? <a href="#">Log in</a></p>
         </div>
     </div>
