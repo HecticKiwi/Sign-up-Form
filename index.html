@@ -1,56 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign-up Form</title>
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign-up Form</title>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="container">
-        <div class="side-bar">
-            <div class="overlay">
-                <img class="icon" src="img/clipboard-line.svg" alt="">
-                <h1>Sign-up Form</h1>
-            </div>
-        </div>
-        <div class="main">
-            <h3>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</h3>
-            <h3>You <em>know</em> you want to.</h3>
-            <div class="form-section">
-                <h3>Let's do this!</h3>
-                <form action="" method="post" id="form">
-                    <div class="field">
-                        <label for="firstName">First Name</label>
-                        <input required type="text" name="firstName" id="firstName" placeholder="John">
-                    </div>
-                    <div class="field">
-                        <label for="lastName">Last Name</label>
-                        <input required type="text" name="lastName" id="lastName" placeholder="Smith">
-                    </div>
-                    <div class="field">
-                        <label for="email">Email</label>
-                        <input required type="email" name="email" id="email" placeholder="jsmith@domain.com">
-                    </div>
-                    <div class="field">
-                        <label for="phone">Phone number</label>
-                        <input required type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Enter a valid phone number." placeholder="123-456-7890">
-                    </div>
-                    <div class="field">
-                        <label for="password">Password</label>
-                        <input required type="password" name="password" id="password">
-                    </div>
-                    <div class="field">
-                        <label for="password">Confirm password</label>
-                        <input required type="password" name="password" id="password">
-                    </div>
-                </form>
-            </div>
-            <button type="submit" form="form" value="Submit">Create Account</button>
-            <p>Already have an account? <a href="#">Log in</a></p>
-        </div>
+  <div class="container">
+    <div class="side-bar">
+      <div class="overlay">
+        <img class="icon" src="img/clipboard-line.svg" alt="">
+        <h1>Sign-up Form</h1>
+      </div>
     </div>
+    <div class="main">
+      <h3>This is not a real online service! You know you need something like this in your life to help you realize your
+        deepest dreams. Sign up <em>now</em> to get started.</h3>
+      <h3>You <em>know</em> you want to.</h3>
+      <div class="form-section">
+        <h3>Let's do this!</h3>
+        <form action="" method="post" id="form">
+          <div class="field">
+            <label for="firstName">First Name</label>
+            <input required type="text" name="firstName" id="firstName" placeholder="John">
+          </div>
+          <div class="field">
+            <label for="lastName">Last Name</label>
+            <input required type="text" name="lastName" id="lastName" placeholder="Smith">
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input required type="email" name="email" id="email" placeholder="jsmith@domain.com">
+          </div>
+          <div class="field">
+            <label for="phone">Phone number</label>
+            <input required type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              title="Enter a valid phone number." placeholder="123-456-7890">
+          </div>
+          <div class="field">
+            <label for="password">Password</label>
+            <input required type="password" name="password" id="password">
+          </div>
+          <div class="field">
+            <label for="password">Confirm password</label>
+            <input required type="password" name="password" id="password">
+          </div>
+        </form>
+      </div>
+      <button type="submit" form="form" value="Submit">Create Account</button>
+      <p>Already have an account? <a href="#">Log in</a></p>
+      <p>By <a href="https://hectickiwi.github.io/">HecticKiwi</a></p>
+    </div>
+  </div>
 </body>
+
 </html>
