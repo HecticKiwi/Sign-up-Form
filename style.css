@@ -1,5 +1,6 @@
 :root {
     --primary: #6d4867;
+    --transition-time: 0.4s
 }
 
 * {
@@ -25,7 +26,7 @@ h3 {
 
 .side-bar {
     background: url(img/bg.jpg) no-repeat center/cover;
-flex: 1 1 max-content;
+    flex: 1 1 max-content;
     display: grid;
     align-items: center;
 }
@@ -54,9 +55,9 @@ flex: 1 1 max-content;
     background-color: rgb(247, 247, 247);
 }
 
-.main > h3,
-.main > button,
-.main > p {
+.main>h3,
+.main>button,
+.main>p {
     margin: 0 30px;
 }
 
@@ -69,23 +70,51 @@ flex: 1 1 max-content;
     gap: 20px;
 }
 
-.form-section label {
-    color: rgb(51, 51, 51);
-    font-weight: 500;
-    display: block;
-    margin-bottom: 5px;
+.form-header {
+    margin-bottom: 10px;
+}
+
+.field {
+    position: relative;
+}
+
+label {
+    color: gray;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: var(--transition-time);
+    pointer-events: none;
+}
+
+input:focus~label,
+input:not(:placeholder-shown)~label {
+    color: var(--primary);
     font-size: 14px;
+    left: 0;
+    top: 0;
+    transform: translateY(-100%);
 }
 
 input {
-    border: 2px solid rgba(0, 0, 0, 0.5);
+    border: solid rgba(0, 0, 0, 0.5);
+    border-width: 0 0 2px 0;
     border-radius: 5px;
     padding: 5px;
+    transition: var(--transition-time);
 }
 
-input:valid {
-    border: 2px solid var(--primary);
+input:focus {
+    outline: none;
+}
 
+input:valid:not(:focus) {
+    border-color: darkgreen;
+}
+
+input:invalid:not(:placeholder-shown):not(:focus) {
+    border-color: darkred;
 }
 
 form {
@@ -98,7 +127,7 @@ form {
     .container {
         flex-direction: column;
     }
-    
+
     .side-bar {
         flex: 0 0 200px;
     }
