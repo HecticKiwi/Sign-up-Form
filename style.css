@@ -1,6 +1,6 @@
 :root {
     --primary: #6d4867;
-    --transition-time: 0.4s
+    --transition-time: 0.3s
 }
 
 * {
@@ -139,12 +139,14 @@ button {
     width: fit-content;
     padding: 10px 20px;
     border-radius: 5em;
-    border: none;
+    border: 1px solid var(--primary);
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.267);
+    transition: var(--transition-time);
 }
 
 button:hover {
-    background-color: #83577c;
+    background-color: transparent;
+    color: var(--primary);
     cursor: pointer;
 }
 
