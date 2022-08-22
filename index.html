@@ -12,50 +12,48 @@
 </head>
 
 <body>
-  <div class="container">
-    <div class="side-bar">
-      <div class="overlay">
-        <img class="icon" src="img/clipboard-line.svg" alt="">
-        <h1>Sign-up Form</h1>
-      </div>
+  <div class="side-bar">
+    <div class="overlay">
+      <img class="overlay__icon" src="img/clipboard-line.svg" alt="">
+      <h1>Sign-up Form</h1>
     </div>
-    <div class="main">
-      <h3>This is not a real online service! You know you need something like this in your life to help you realize your
-        deepest dreams. Sign up <em>now</em> to get started.</h3>
-      <h3>You <em>know</em> you want to.</h3>
-      <div class="form-section">
-        <h3 class="form-header">Let's do this!</h3>
-        <form action="" method="post" id="form">
-          <div class="field">
-            <input required type="text" name="firstName" id="firstName" placeholder=" ">
-            <label for="firstName">First Name</label>
-          </div>
-          <div class="field">
-            <input required type="text" name="lastName" id="lastName" placeholder=" ">
-            <label for="lastName">Last Name</label>
-          </div>
-          <div class="field">
-            <input required type="email" name="email" id="email" placeholder=" ">
-            <label for="email">Email</label>
-          </div>
-          <div class="field">
-            <input required type="tel" name="phone" id="phone" pattern="^(\+0?1\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$" title="Enter a valid phone number." placeholder=" ">
-            <label for="phone">Phone number</label>
-          </div>
-          <div class="field">
-            <input required type="password" name="password" id="password" placeholder=" ">
-            <label for="password">Password</label>
-          </div>
-          <div class="field">
-            <input required type="password" name="password" id="password" placeholder=" ">
-            <label for="password">Confirm password</label>
-          </div>
-        </form>
-      </div>
-      <button type="submit" form="form" value="Submit">Create Account</button>
-      <p>Already have an account? <a href="#">Log in</a></p>
-      <p>By <a href="https://hectickiwi.github.io/">HecticKiwi</a></p>
+  </div>
+  <div class="main">
+    <h3>This is not a real online service! You know you need something like this in your life to help you realize your
+      deepest dreams. Sign up <em>now</em> to get started.</h3>
+    <h3>You <em>know</em> you want to.</h3>
+    <div class="form-section">
+      <h3 class="form-header">Let's do this!</h3>
+      <form action="" method="post" class="form">
+        <div class="form__field">
+          <input required type="text" name="firstName" id="firstName" placeholder=" ">
+          <label for="firstName">First Name</label>
+        </div>
+        <div class="form__field">
+          <input required type="text" name="lastName" id="lastName" placeholder=" ">
+          <label for="lastName">Last Name</label>
+        </div>
+        <div class="form__field">
+          <input required type="email" name="email" id="email" placeholder=" ">
+          <label for="email">Email</label>
+        </div>
+        <div class="form__field">
+          <input required type="tel" name="phone" id="phone" pattern="^(\+0?1\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$" title="Enter a valid phone number." placeholder=" ">
+          <label for="phone">Phone number</label>
+        </div>
+        <div class="form__field">
+          <input required type="password" name="password" id="password" placeholder=" ">
+          <label for="password">Password</label>
+        </div>
+        <div class="form__field">
+          <input required type="password" name="password" id="password" placeholder=" ">
+          <label for="password">Confirm password</label>
+        </div>
+      </form>
     </div>
+    <button type="submit" form="form" value="Submit">Create Account</button>
+    <p>Already have an account? <a href="#">Log in</a></p>
+    <p>By <a href="https://hectickiwi.github.io/">HecticKiwi</a></p>
   </div>
 </body>
 
